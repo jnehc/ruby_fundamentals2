@@ -10,11 +10,19 @@ students = {
 # end
 
 students.each { |key, value| puts "#{key}: #{value}" }
+puts "print cohort list"
 students["cohort4"] = "43"
+
 students.each { |key, value| puts "#{key}: #{value}" }
+puts "added cohort 4"
+puts students.keys
+puts "printed keys only"
 
+#increase each key by 5%  and display
 
-
+students.delete("cohort2")
+students.each { |key, value| puts "#{key}: #{value}" }
+puts "delete cohort2"
 
 #display each set like so: "cohort1: 34 students", create a method to display it all
 # For each cohort, display the cohort name and the amount of students. It's probably best that you create a method. 
